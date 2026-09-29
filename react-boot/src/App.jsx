@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import { UseRefHook } from './hooks/useRef-hook'
+import { UseRefHook } from './hooks/useref/UseRef-hook'
+import { UseMemoEx } from './hooks/useMemo/UseMemoEx'
 function App() {
 
   return (
     <>
-      <section id="center">
+      <div className='overflow-y'>
         <UseRefHook />
-      </section>
+        <UseMemoEx/>
+      </div>
     </>
   )
 }

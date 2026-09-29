@@ -53,6 +53,9 @@
 body {
   margin: 0;
 }
+.overflow-y{
+  overflow-y: scroll;
+}
 
 #root {
   width: 1126px;

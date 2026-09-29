@@ -1,5 +1,5 @@
 import { useRef, useState } from "react"
-import { StopWatch } from "./stopwatch";
+import { StopWatch } from "./StopWatch";
 
 export const UseRefHook = () =>{
     const buttonRef = useRef(0);
@@ -15,7 +15,7 @@ export const UseRefHook = () =>{
         buttonRef.current.style.backgroundColor = 'green'
     }
     return (
-        <div>
+        <section id="center">
             <h1>UseRef Hook</h1>
             <h6>{count}</h6>
             <button className="counter" onClick={incCount}>Inc</button>
@@ -23,6 +23,6 @@ export const UseRefHook = () =>{
             <button ref={buttonRef} className="counter" onClick={changeColor}>Change color sing useRef</button>
  <br></br>
             <StopWatch/>
-        </div>
+        </section>
     )
 }
